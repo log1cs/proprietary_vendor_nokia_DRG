@@ -15,7 +15,7 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/DRG/proprietary/vendor/etc/acdbdata/DRG/sdm660-snd-card-drg/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/DRG/sdm660-snd-card-drg/Speaker_cal.acdb \
     vendor/nokia/DRG/proprietary/vendor/etc/acdbdata/DRG/sdm660-snd-card-drg/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/DRG/sdm660-snd-card-drg/workspaceFile.qwsp \
     vendor/nokia/DRG/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
-    vendor/nokia/DRG/proprietary/vendor/etc/audio_platform_info_drg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_drg.xml \
+    vendor/nokia/DRG/proprietary/vendor/etc/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
     vendor/nokia/DRG/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     vendor/nokia/DRG/proprietary/vendor/etc/camera/calibration_test.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/calibration_test.bin \
     vendor/nokia/DRG/proprietary/vendor/etc/camera/camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_config.xml \
@@ -23,7 +23,7 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/DRG/proprietary/vendor/etc/camera/s5k3p9sx_drg_main_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k3p9sx_drg_main_chromatix.xml \
     vendor/nokia/DRG/proprietary/vendor/etc/camera/s5k5e9_drg_aux_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k5e9_drg_aux_chromatix.xml \
     vendor/nokia/DRG/proprietary/vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@3.0-service-qti.rc \
-    vendor/nokia/DRG/proprietary/vendor/etc/mixer_paths_drg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_drg.xml \
+    vendor/nokia/DRG/proprietary/vendor/etc/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
     vendor/nokia/DRG/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     vendor/nokia/DRG/proprietary/vendor/etc/sensors/sensor_def_qcomdev_drg.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev_drg.conf \
     vendor/nokia/DRG/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
@@ -84,7 +84,6 @@ PRODUCT_PACKAGES += \
     libsensor_reg \
     sensor_calibrate \
     sensors.ssc \
-    audio.primary.sdm660-nokia \
     camera.sdm660 \
     libacdb-fts \
     libacdbloader \
@@ -103,10 +102,7 @@ PRODUCT_PACKAGES += \
     libarcsoft_picselfie_algorithm \
     libarcsoft_smart_denoise \
     libaudcal \
-    libaudio_log_utils \
     libaudioalsa \
-    libaudioconfigstore \
-    libaudioparsers \
     libchromatix_s5k3p9sx_drg_front_2nd_common \
     libchromatix_s5k3p9sx_drg_front_2nd_cpp_hfr_120 \
     libchromatix_s5k3p9sx_drg_front_2nd_cpp_hfr_60 \
@@ -314,7 +310,6 @@ PRODUCT_PACKAGES += \
     libchromatix_s5k5e9_drg_aux_zsl_preview_3a \
     libchromatix_s5k5e9_drg_aux_zsl_video_3a \
     libdepthmapwrapper \
-    libdrc \
     libfih_camera_effect \
     libflash_dummy_flash \
     libflash_pmic \
@@ -430,10 +425,7 @@ PRODUCT_PACKAGES += \
     libqomx_jpegdec \
     libqomx_jpegenc \
     libqomx_jpegenc_pipe \
-    libqtigef \
     libremosaic_daemon \
-    libsurround_3mic_proc \
-    libtinycompress \
     android.hardware.keymaster@3.0-impl-qti \
     fingerprint.gxfp3258_drg \
     libgf_ca_gxfp3258_drg \
